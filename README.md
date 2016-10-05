@@ -5,7 +5,7 @@ testing docker container deployment for web app on apache 2
 
 # FOLLOW THE STEPS BELOW
 
-* Remove existing container
+* Remove existing container*
 docker rm -f runningDWA
 
 * Build new container
