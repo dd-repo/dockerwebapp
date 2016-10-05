@@ -5,25 +5,12 @@ testing docker container deployment for web app on apache 2
 
 # FOLLOW THE STEPS BELOW
 
-* Remove existing container*
-docker rm -f runningDWA
+1. Remove existing container
 
-* Build new container
-docker build -t dockerwebapp .
+> docker rm -f runningDWA
 
-* Run the docker container that has just been built
-docker run -d -p 80:80 --name runningDWA dockerwebapp# dockerwebapp
-testing docker container deployment for web app on apache 2
+2. Build new container
+> docker build -t dockerwebapp .
 
-# When deploying this you need to script the following commands
-
-# FOLLOW THE STEPS BELOW
-
-* Remove existing container*
-docker rm -f runningDWA
-
-* Build new container
-docker build -t dockerwebapp .
-
-* Run the docker container that has just been built
-docker run -d -p 80:80 --name runningDWA dockerwebapp
+3. Run the docker container that has just been built
+> docker run -d -p 80:80 --name runningDWA dockerwebapp
