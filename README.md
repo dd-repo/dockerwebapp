@@ -14,3 +14,5 @@ testing docker container deployment for web app on apache 2
 
 3. Run the docker container that has just been built
 > docker run -d -p 80:80 --name runningDWA dockerwebapp
+OR
+> docker run -d -p 80:80 --name runningDWA -v /Users/anthonygrant/Documents/docker/dockerwebapp/webapp:/var/www/html dockerwebapp
